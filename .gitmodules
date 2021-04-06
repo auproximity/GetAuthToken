@@ -1,0 +1,3 @@
+[submodule "hazeltest/Hazel-Networking"]
+	path = hazeltest/Hazel-Networking
+	url = https://github.com/willardf/Hazel-Networking
