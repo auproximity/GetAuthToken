@@ -22,7 +22,7 @@ namespace GetAuthToken
 
         static void Main(string[] args)
         {
-            var endpoint = new IPEndPoint(IPAddress.Parse(args[1]), 22025);
+            var endpoint = new IPEndPoint(IPAddress.Parse(args[1]), int.Parse(args[2]));
 
             var mode = IPMode.IPv4;
             var rsa = RSA.Create();
