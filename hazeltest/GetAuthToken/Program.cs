@@ -40,7 +40,7 @@ namespace GetAuthToken
         static private byte[] BuildData()
         {
             MessageWriter messageWriter = MessageWriter.Get();
-            messageWriter.Write(50531650);
+            messageWriter.Write(0x03030fcc);
             messageWriter.Write((byte)5);
             messageWriter.Write("");
             var ret = messageWriter.ToByteArray(includeHeader: false);

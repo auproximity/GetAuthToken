@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-rm Hazel-Networking/Hazel/Properties/AssemblyInfo.cs
+[ -e Hazel-Networking/Hazel/Properties/AssemblyInfo.cs ] && rm Hazel-Networking/Hazel/Properties/AssemblyInfo.cs
 cp ./Hazel.csproj Hazel-Networking/Hazel/Hazel.csproj
 pushd Hazel-Networking/Hazel
 dotnet build -c Release
